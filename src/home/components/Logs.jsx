@@ -172,16 +172,16 @@ const TableRow = ({ index }) => {
         <p className="text-[12px] text-black font-semibold">186,998</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[10px] text-[#C61717] font-semibold">-0.14%</p>
+        <p className="text-[12px] text-[#C61717] font-semibold">-0.14%</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[10px] text-[#03DB03] font-semibold">11.86%</p>
+        <p className="text-[12px] text-[#03DB03] font-semibold">11.86%</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[10px] text-[#03DB03] font-semibold">20.55%</p>
+        <p className="text-[12px] text-[#03DB03] font-semibold">20.55%</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[10px] text-[#03DB03] font-semibold">15,582%</p>
+        <p className="text-[12px] text-[#03DB03] font-semibold">15,582%</p>
       </td>
       <td className="py-1 px-2 border">
         <p className="text-[12px] text-black font-semibold">$186k</p>
