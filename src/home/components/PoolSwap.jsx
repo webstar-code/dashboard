@@ -36,7 +36,9 @@ export default function PoolSwap() {
           <p className="text-smf font-semibold text-[#323232]">$48.56M</p>
         </div>
         <div className="w-full bg-white drop-shadow-2xl flex flex-col items-center gap-1 p-2 rounded-xl">
-          <p className="text-[9px] text-[#323232] font-medium uppercase">LIQUIDITY</p>
+          <p className="text-[9px] text-[#323232] font-medium uppercase">LIQUIDITY
+          <MaterialSymbol icon="lock" size={12} className="ml-1"/>
+          </p>
           <p className="text-smf font-semibold text-[#323232]">$826.4K</p>
         </div>
         <div className="w-full bg-white drop-shadow-2xl flex flex-col items-center gap-1 p-2 rounded-xl">
@@ -60,7 +62,9 @@ export default function PoolSwap() {
           <p className="text-smf font-semibold text-[#323232]">48.56M</p>
         </div>
         <div className="w-full bg-white drop-shadow-2xl flex flex-col items-center gap-1 p-2 rounded-xl">
-          <p className="text-[9px] text-[#323232] font-medium uppercase">VOLATILITY</p>
+          <p className="text-[9px] text-[#323232] font-medium uppercase flex items-center">VOLATILITY
+            <MaterialSymbol icon="info" size={12} className="ml-1"/>
+          </p>
           <p className="text-smf font-semibold text-[#323232]">0.0519</p>
         </div>
       </div>
