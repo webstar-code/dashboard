@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/carousel"
 import { AVATAR1, LOGO, SOLANA, TELEGRAM, TWITTER } from "@/assets";
 
-export default function Section2() {
+export default function TrendingTokens() {
   const [trendingState, setTrendingState] = useState(true);
 
   return (

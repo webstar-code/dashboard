@@ -8,13 +8,11 @@ import { MaterialSymbol } from "react-material-symbols"
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselItem
 } from "@/components/ui/carousel"
 
 
-export default function Slider() {
+export default function Ads() {
   return (
     <div className="w-full">
       <Carousel className="w-full">

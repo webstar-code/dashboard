@@ -25,7 +25,7 @@ import ARROWBACK from '../../assets/chart-icons/akar-icons_arrow-back.svg';
 import ARROWRIGHT from '../../assets/chart-icons/akar-icons_arrow-back-1.svg';
 import SEARCHAILINE from '../../assets/chart-icons/mingcute_search-ai-line.svg';
 
-export default function Chart1() {
+export default function Chart() {
   return (
     <div className="w-full bg-white rounded-2xl p-4 overflow-hidden">
       <div className="w-full flex flex-wrap md:flex-nowrap gap-4 items-center justify-around border-b border-black pb-2">

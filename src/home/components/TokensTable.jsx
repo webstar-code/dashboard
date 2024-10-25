@@ -5,7 +5,7 @@ import { TRAIMP, TRAIMP2 } from "@/assets";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
-export default function Logs() {
+export default function TokensTable() {
   const [trendingTime, setTrendingTime] = useState("5m")
   const [category, setCategory] = useState("")
 
@@ -68,7 +68,7 @@ export default function Logs() {
         </div>
 
 
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-2 items-center">
           <div onClick={() => setCategory("top")} className={cn("flex gap-1 items-center cursor-pointer p-1 rounded-md", category === "top" && "bg-gray-300 text-white")}>
             <MaterialSymbol icon="bar_chart" color={"#232323"} size={20} />
             <p className="text-[10px] text-[#232323] font-semibold">Top</p>
@@ -144,7 +144,7 @@ export default function Logs() {
 const TableRow = ({ index }) => {
   return (
     <tr className="table-fixed text-[11px] bg-white border">
-      <td className="min-w-[250px] py-1 px-2 border">
+      <td className="min-w-[230px] py-1 px-2 border">
         <div className="flex items-center gap-1 ">
           <p className="text-[12px] text-black font-semibold">#{index + 1}</p>
           <img src={TRAIMP} className="w-4 h-4" />
