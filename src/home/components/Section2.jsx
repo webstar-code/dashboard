@@ -18,7 +18,7 @@ export default function Section2() {
   return (
     <div className="w-full flex flex-col gap-6">
       <div className="w-full flex items-center justify-between">
-        <div className=" flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <p className="text-[#00135D] text-xs font-medium">Network: <span className="text-[#006699]">525</span></p>
           <p className="text-[#00135D] text-xs font-medium">Solana: <span className="text-[#006699]">818</span></p>
           <p className="text-[#00135D] text-xs font-medium">Pools: <span className="text-[#006699]">427,377</span></p>
@@ -32,7 +32,7 @@ export default function Section2() {
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col md:flex-row items-center gap-2">
           <p className="text-xs text-[#818EA3]">Today’s trending tokens</p>
           <Switch
             className="bg-[#8F8F8F]"
@@ -45,7 +45,7 @@ export default function Section2() {
       <div className="w-full">
         <Carousel className="w-full">
           <CarouselContent className="-ml-6">
-            <CarouselItem className="pl-6 sm:basis-1/2 md:basis-1/3 lg:basis-1/3">
+            <CarouselItem className="pl-6 sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
               <div className="relative w-full h-full bg-white rounded-xl p-6 flex flex-col gap-6">
                 <div className="flex items-center">
                   <Tabs defaultValue="gainers" className="w-full">
@@ -94,7 +94,7 @@ export default function Section2() {
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="pl-6 sm:basis-1/2 md:basis-1/3 lg:basis-1/3">
+            <CarouselItem className="pl-6 sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
               <div className="relative w-full h-full bg-white rounded-xl p-6 flex flex-col gap-2">
                 <p className="absolute right-6 top-8 text-[11px] font-semibold text-[#232323] flex items-center">More
                   <MaterialSymbol icon="keyboard_arrow_right" />
@@ -125,7 +125,7 @@ export default function Section2() {
               </div>
             </CarouselItem>
 
-            <CarouselItem className="pl-6 sm:basis-1/2 md:basis-1/3 lg:basis-1/3">
+            <CarouselItem className="pl-6 sm:basis-1/1 md:basis-1/2 lg:basis-1/3">
               <div className="relative w-full h-full bg-white rounded-xl p-6 flex flex-col gap-6">
                 <p className="absolute right-6 top-8 text-[11px] font-semibold text-[#232323] flex items-center">More
                   <MaterialSymbol icon="keyboard_arrow_right" />

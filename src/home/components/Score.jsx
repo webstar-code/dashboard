@@ -6,7 +6,7 @@ export default function Score() {
   return (
     <div className="w-full bg-white p-4 flex flex-col gap-2 items-center rounded-xl">
       <div className="w-full flex flex-col gap-2 items-center">
-        <img src={SCORECHART} className="w-[80%]" />
+        <img src={SCORECHART} className="w-[80%] max-w-[200px]" />
         <p className="text-2xl font-semibold text-[#232323]">99
           <span className="text-xs text-[#888888] font-semibold">/99</span></p>
         <h3 className="text-[13px] text-black font-semibold">TRADEINGVIEWS Score</h3>

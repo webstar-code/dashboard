@@ -103,8 +103,8 @@
 
 
 .custom-scrollbar::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  width: 3px;
+  height: 3px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {

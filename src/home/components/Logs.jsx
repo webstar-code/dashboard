@@ -7,7 +7,7 @@ export default function Logs() {
   return (
     <div className="w-full flex flex-col gap-4">
 
-      <div className="w-full flex justify-between gap-6">
+      <div className="w-full flex flex-wrap md:flex-nowrap justify-between gap-2 md:gap-6">
         <div className="w-full bg-[#020417] p-2 px-4 flex gap-2 items-center justify-center rounded-lg">
           <p className="text-[12px] font-medium text-white">24H VOLUME:</p>
           <p className="text-sm font-semibold text-white">$5.050B</p>
@@ -23,7 +23,7 @@ export default function Logs() {
         </div>
       </div>
 
-      <div className="w-full flex gap-6">
+      <div className="w-full flex flex-wrap md:flex-nowrap gap-2 md:gap-6">
         <Select defaultValue="last24">
           <SelectTrigger className="w-min rounded-xl shadow-none border bg-[#000000] text-white text-[10px]">
             <SelectValue />
@@ -100,29 +100,29 @@ export default function Logs() {
         </Button>
 
       </div>
-
-      <table className="w-full rounded-xl">
-        <thead className="bg-[#020417] rounded-xl">
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">TOKEN</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">PRICE</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">AGE</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">TXNS</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">VOLUME</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">MAKERS</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">5M</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">1H</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">6H</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">24 H</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">LIQUIDITY</th>
-          <th className="text-white text-[8px] font-semibold text-left px-2 py-1">MCAP</th>
-        </thead>
-        <tbody>
-          {[...new Array(40)].map((_, index) => {
-            return <TableRow index={index} />
-
-          })}
-        </tbody>
-      </table>
+      <div className="w-full overflow-x-scroll custom-scrollbar">
+        <table className="w-full rounded-xl overflow-hidden overflow-x-scroll">
+          <thead className="bg-[#020417] rounded-xl">
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">TOKEN</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">PRICE</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">AGE</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">TXNS</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">VOLUME</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">MAKERS</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">5M</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">1H</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">6H</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">24 H</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">LIQUIDITY</th>
+            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">MCAP</th>
+          </thead>
+          <tbody className=" overflow-hidden overflow-x-scroll">
+            {[...new Array(40)].map((_, index) => {
+              return <TableRow index={index} />
+            })}
+          </tbody>
+        </table>
+      </div>
       <div className="flex items-center gap-6">
         <p className="text-[10px] font-semibold">Showing pairs 1-40 of 36,745</p>
         <div className="flex items-center border border-black p-1 rounded-sm">
@@ -137,8 +137,8 @@ export default function Logs() {
 
 const TableRow = ({ index }) => {
   return (
-    <tr className="text-[11px] bg-white border">
-      <td className="py-1 px-2 border">
+    <tr className="table-fixed text-[11px] bg-white border">
+      <td className="min-w-[200px] py-1 px-2 border">
         <div className="flex items-center gap-1 ">
           <p className="text-[7px] text-black font-semibold">#{index + 1}</p>
           <img src={TRAIMP} className="w-4 h-4" />

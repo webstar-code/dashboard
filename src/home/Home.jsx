@@ -11,22 +11,22 @@ import News from "./components/News";
 import Score from "./components/Score";
 
 export const Home = () => (
-  <div className="w-full pl-20">
+  <div className="relative w-full md:pl-20 max-w-[1600px] mx-auto">
     <Header />
     <SideBar />
     <div className="w-full h-full flex flex-col gap-10 min-h-screen bg-[#F7F7F7] p-6">
       <Slider />
       <Section2 />
-      <div className="w-full flex gap-6">
+      <div className="w-full flex flex-col-reverse xl:flex-row gap-6">
         <div className="flex flex-col gap-6">
-          <div className="w-full min-h-[600px] bg-white">
+          <div className="w-full bg-white">
             <Chart1 />
           </div>
           <div className="w-full min-h-[600px]">
             <Logs />
           </div>
         </div>
-        <div className="min-w-[300px] flex flex-col gap-6 grow shrink-0">
+        <div className="min-w-[300px] flex flex-wrap xl:flex-col gap-6 grow shrink-0">
           <SolonaSwap />
           <PoolSwap />
           <Score />
