@@ -11,9 +11,12 @@ export default function SolonaSwap() {
 
   return (
     <div className="w-full max-w-md h-min flex flex-col gap-4 rounded-xl bg-white">
-      <div className="w-full bg-[#232323] flex items-center gap-2 p-2 py-3 rounded-xl">
-        <MaterialSymbol icon="swap_horiz" color={"#fff"} />
-        <p className="text-white text-sm font-semibold">Solana Swap</p>
+      <div className="w-full bg-[#232323] flex items-center justify-between gap-2 px-4 py-3 rounded-xl">
+        <div className="flex items-center gap-2">
+          <MaterialSymbol icon="swap_horiz" color={"#fff"} />
+          <p className="text-white text-sm font-semibold">Solana Swap</p>
+        </div>
+          <MaterialSymbol icon="keyboard_arrow_down" color={"#fff"} size={24} className="cursor-pointer"/>
       </div>
       <div className="flex flex-col gap-4 p-3">
 
