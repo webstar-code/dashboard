@@ -4,7 +4,7 @@ import { MaterialSymbol } from "react-material-symbols";
 
 export default function Score() {
   return (
-    <div className="w-full bg-white p-4 flex flex-col gap-2 items-center rounded-xl">
+    <div className="w-full max-w-md  bg-white p-4 flex flex-col gap-2 items-center rounded-xl">
       <div className="w-full flex flex-col gap-2 items-center">
         <img src={SCORECHART} className="w-[80%] max-w-[200px]" />
         <p className="text-2xl font-semibold text-[#232323]">99

@@ -3,18 +3,22 @@ import { MaterialSymbol } from "react-material-symbols";
 import { Input } from "../../components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 export default function SolonaSwap() {
+  const [inputOne, setInputOne] = useState("trading")
+  const [inputTwo, setInputTwo] = useState("solana")
+
   return (
     <div className="w-full max-w-md h-min flex flex-col gap-4 rounded-xl bg-white">
-      <div className="w-full bg-[#232323] flex items-center gap-2 p-2 rounded-xl">
+      <div className="w-full bg-[#232323] flex items-center gap-2 p-2 py-3 rounded-xl">
         <MaterialSymbol icon="swap_horiz" color={"#fff"} />
-        <p className="text-white text-sm">Solana Swap</p>
+        <p className="text-white text-sm font-semibold">Solana Swap</p>
       </div>
       <div className="flex flex-col gap-4 p-3">
 
         <div className="w-full flex flex-col items-center gap-4">
-          <Select defaultValue={"trading"}>
+          <Select onValueChange={(value) => setInputOne(value)} value={inputOne} defaultValue={inputOne}>
             <SelectTrigger className="w-full rounded-xl shadow-none border">
               <SelectValue />
             </SelectTrigger>
@@ -25,19 +29,6 @@ export default function SolonaSwap() {
                   <p className="text-sm font-medium">Trading Views</p>
                 </div>
               </SelectItem>
-            </SelectContent>
-          </Select>
-          <Input
-            className="text-base text-center font-medium border rounded-xl shadow-none outline-none focus:outline-none focus:ring-0 focus-visible:ring-0"
-            placeholder=""
-            value={10}
-          />
-          <MaterialSymbol icon="autorenew" size={24} />
-          <Select defaultValue={"solana"}>
-            <SelectTrigger className="w-full rounded-xl shadow-none border">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
               <SelectItem value="solana">
                 <div className="flex items-center gap-2">
                   <img src={SOLANA} className="w-4 h-4" />
@@ -48,8 +39,38 @@ export default function SolonaSwap() {
           </Select>
           <Input
             className="text-base text-center font-medium border rounded-xl shadow-none outline-none focus:outline-none focus:ring-0 focus-visible:ring-0"
-            placeholder=""
-            value={0.002377}
+            placeholder="Enter number"
+          />
+          <div className="cursor-pointer" onClick={() => {
+            const x = inputOne;
+            setInputTwo(x);
+            setInputOne(inputTwo)
+          }}
+          >
+            <MaterialSymbol icon="autorenew" size={24} />
+          </div>
+          <Select onValueChange={(value) => setInputTwo(value)} value={inputTwo} defaultValue={inputTwo}>
+            <SelectTrigger className="w-full rounded-xl shadow-none border">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectItem value="solana">
+                <div className="flex items-center gap-2">
+                  <img src={SOLANA} className="w-4 h-4" />
+                  <p className="text-sm font-medium">Solana</p>
+                </div>
+              </SelectItem>
+              <SelectItem value="trading">
+                <div className="flex items-center gap-2">
+                  <img src={LOGO} className="w-4 h-4" />
+                  <p className="text-sm font-medium">Trading Views</p>
+                </div>
+              </SelectItem>
+            </SelectContent>
+          </Select>
+          <Input
+            className="text-base text-center font-medium border rounded-xl shadow-none outline-none focus:outline-none focus:ring-0 focus-visible:ring-0"
+            placeholder="Enter number"
           />
 
           <Button className="bg-[#6DB9F3] h-10 w-full font-semibold">
@@ -74,10 +95,12 @@ export default function SolonaSwap() {
             <p className="text-[10px] text-[#232323] font-medium">Provider</p>
             <Select>
               <SelectTrigger className="w-[180px] h-6 rounded-md shadow-none border">
-                <SelectValue placeholder="trading"></SelectValue>
+                <SelectValue placeholder="select provider"></SelectValue>
               </SelectTrigger>
               <SelectContent>
-
+                <SelectItem value="provider-1">Provider 1</SelectItem>
+                <SelectItem value="provider-2">Provider 2</SelectItem>
+                <SelectItem value="provider-3">Provider 3</SelectItem>
               </SelectContent>
             </Select>
           </div>

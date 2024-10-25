@@ -18,8 +18,6 @@ import UNLOCK from '../../assets/chart-icons/si_unlock-fill.svg';
 import EYE from '../../assets/chart-icons/tabler_eye.svg';
 import TRASH from '../../assets/chart-icons/octicon_trash-16.svg';
 import FLIPVIEW from '../../assets/chart-icons/system-uicons_flip-view.svg';
-
-
 import EXPAND from '../../assets/chart-icons/mi_expand.svg';
 import CHARTLINE from '../../assets/chart-icons/vaadin_chart-line.svg';
 import CHART from '../../assets/chart-icons/vaadin_chart.svg';
@@ -29,7 +27,7 @@ import SEARCHAILINE from '../../assets/chart-icons/mingcute_search-ai-line.svg';
 
 export default function Chart1() {
   return (
-    <div className="w-full bg-white rounded-xl p-4">
+    <div className="w-full bg-white rounded-2xl p-4 overflow-hidden">
       <div className="w-full flex flex-wrap md:flex-nowrap gap-4 items-center justify-around border-b border-black pb-2">
 
         <div className="flex gap-4 items-center">
@@ -75,7 +73,7 @@ export default function Chart1() {
       </div>
 
       <div className="relative w-full h-full bg-white flex flex-col-reverse md:flex-row items-start p-2">
-        <div className="w-10 h-full bg-white flex flex-col items-center gap-2 p-2">
+        <div className="w-10 h-full bg-white flex flex-col items-center gap-2 p-2 cursor-pointer">
           <img src={PLUS} />
           <img src={LINE} />
           <img src={HORIZONTALLINE} />
@@ -109,7 +107,7 @@ export default function Chart1() {
             <p className="text-[8px] font-medium text-[#232323]">DEXT/ETH</p>
             <p className="text-[8px] font-medium text-[#232323]">Max: $0.7006</p>
             <p className="text-[8px] font-medium text-[#232323]">Min: $0.8414</p>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-4 cursor-pointer">
               <img src={EXPAND} />
               <img src={CHART} />
               <img src={CHARTLINE} />
@@ -127,7 +125,7 @@ export default function Chart1() {
               <p className="text-[8px] font-medium">L<span className="text-[#C61717]">0.6684</span></p>
               <p className="text-[8px] font-medium">C<span className="text-[#C61717]">0.6684 -0.000561651  (-0.56%)</span></p>
             </div>
-            <div className="flex gap-2 items-center ml-auto">
+            <div className="flex gap-2 items-center ml-auto cursor-pointer">
               <img src={SEARCHAILINE} className="w-5 h-5" />
               <MaterialSymbol icon="settings" size={20} />
               <MaterialSymbol icon="camera_alt" size={20} />

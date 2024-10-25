@@ -41,7 +41,7 @@ export default function Header() {
               <p className="text-sm font-medium">ETH: $2,734.51+3.5% 24h</p>
             </div>
             <div className="flex items-center gap-2">
-              <Fuel size={16} />
+              <MaterialSymbol icon="local_gas_station" fill />
               <p className="text-sm font-medium">10.07</p>
             </div>
           </div>

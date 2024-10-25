@@ -2,8 +2,13 @@ import { MaterialSymbol } from "react-material-symbols";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../../components/ui/select";
 import { Button } from "@/components/ui/button";
 import { TRAIMP, TRAIMP2 } from "@/assets";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 export default function Logs() {
+  const [trendingTime, setTrendingTime] = useState("5m")
+  const [category, setCategory] = useState("")
+
   return (
     <div className="w-full flex flex-col gap-4">
 
@@ -44,32 +49,35 @@ export default function Logs() {
             <p className="text-[10px] font-medium">Trending</p>
             <MaterialSymbol icon="keyboard_arrow_down" size={"#fff"} />
           </div>
-          <div className="bg-[#3E3E3E] p-1 rounded-md flex items-center">
-            <p className="text-[10px] text-white font-medium  uppercase">5M</p>
+          <div onClick={() => setTrendingTime("5m")}
+            className={cn("bg-[#3E3E3E] p-1 rounded-md flex items-center cursor-pointer", trendingTime === "5m" && "bg-white text-black")} >
+            <p className="text-[10px] font-medium uppercase">5M</p>
           </div>
-          <div className="bg-[#3E3E3E] p-1 rounded-md flex items-center">
-            <p className="text-[10px] text-white font-medium  uppercase">1h</p>
+          <div onClick={() => setTrendingTime("1h")}
+            className={cn("bg-[#3E3E3E] p-1 rounded-md flex items-center cursor-pointer", trendingTime === "1h" && "bg-white text-black")} >
+            <p className="text-[10px]  uppercase">1h</p>
           </div>
-          <div className="bg-white p-1 rounded-md flex items-center">
-            <p className="text-[10px] text-black font-semibold  uppercase">6h</p>
+          <div onClick={() => setTrendingTime("6h")}
+            className={cn("bg-[#3E3E3E] p-1 rounded-md flex items-center cursor-pointer", trendingTime === "6h" && "bg-white text-black")} >
+            <p className="text-[10px] uppercase">6h</p>
           </div>
-          <div className="bg-[#3E3E3E] p-1 rounded-md flex items-center">
-            <p className="text-[10px] text-white font-medium  uppercase">24h</p>
+          <div onClick={() => setTrendingTime("24h")}
+            className={cn("bg-[#3E3E3E] p-1 rounded-md flex items-center cursor-pointer", trendingTime === "24h" && "bg-white text-black")} >
+            <p className="text-[10px] uppercase">24h</p>
           </div>
-
         </div>
 
 
         <div className="flex gap-4 items-center">
-          <div className="flex gap-2 items-center">
-            <MaterialSymbol icon="bar_chart" color={"#232323"} size={16} />
+          <div onClick={() => setCategory("top")} className={cn("flex gap-1 items-center cursor-pointer p-1 rounded-md", category === "top" && "bg-gray-300 text-white")}>
+            <MaterialSymbol icon="bar_chart" color={"#232323"} size={20} />
             <p className="text-[10px] text-[#232323] font-semibold">Top</p>
           </div>
-          <div className="flex gap-2 items-center">
-            <MaterialSymbol icon="arrow_upward_alt" color={"#232323"} size={16} />
+          <div onClick={() => setCategory("gainer")} className={cn("flex gap-1 items-center cursor-pointer p-1 rounded-md", category === "gainer" && "bg-gray-300 text-white")}>
+            <MaterialSymbol icon="arrow_upward_alt" color={"#232323"} size={20} />
             <p className="text-[10px] text-[#232323] font-semibold">Gainer</p>
           </div>
-          <div className="flex gap-2 items-center">
+          <div onClick={() => setCategory("new-pair")} className={cn("flex gap-1 items-center cursor-pointer p-1 rounded-md", category === "new-pair" && "bg-gray-300 text-white")}>
             <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.3333 0.666504C13.0733 0.666504 13.6666 1.25984 13.6666 1.99984V9.99984C13.6666 10.7398 13.0733 11.3332 12.3333 11.3332H1.66659C0.926585 11.3332 0.333252 10.7398 0.333252 9.99984V1.99984C0.333252 1.25984 0.926585 0.666504 1.66659 0.666504H12.3333ZM4.66658 7.99984V3.99984H3.83325V6.33317L2.16659 3.99984H1.33325V7.99984H2.16659V5.6665L3.86659 7.99984H4.66658ZM7.99992 4.83984V3.99984H5.33325V7.99984H7.99992V7.1665H6.33325V6.4265H7.99992V5.5865H6.33325V4.83984H7.99992ZM12.6666 7.33317V3.99984H11.8333V6.99984H11.0866V4.6665H10.2533V6.99984H9.49992V3.99984H8.66658V7.33317C8.66658 7.50998 8.73682 7.67955 8.86185 7.80457C8.98687 7.9296 9.15644 7.99984 9.33325 7.99984H11.9999C12.1767 7.99984 12.3463 7.9296 12.4713 7.80457C12.5963 7.67955 12.6666 7.50998 12.6666 7.33317Z" fill="#232323" />
             </svg>
@@ -129,8 +137,6 @@ export default function Logs() {
           <p className="text-[10px] font-semibold">Pairs 41-80 {`>`}</p>
         </div>
       </div>
-
-
     </div >
   )
 }
