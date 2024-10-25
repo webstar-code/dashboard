@@ -11,7 +11,7 @@ import News from "./components/News";
 import Score from "./components/Score";
 
 export const Home = () => (
-  <div className="relative w-full md:pl-20 max-w-[1600px] mx-auto">
+  <div className="relative w-full md:pl-20 mx-auto">
     <Header />
     <SideBar />
     <div className="w-full h-full flex flex-col gap-10 min-h-screen bg-[#F7F7F7] p-6">
