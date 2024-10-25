@@ -9,7 +9,7 @@ export default function Header() {
     <div className="w-full flex items-center justify-between p-4">
       <div className="w-full flex items-center justify-between">
         <div className="w-full h-10 max-w-md flex items-center gap-2 px-2 py-1 border border-black rounded-xl">
-          <Search size={20}/>
+          <Search size={20} />
           <Input
             className="text-xs font-medium border-none shadow-none outline-none focus:outline-none focus:ring-0 focus-visible:ring-0"
             placeholder="Search pair by symbol, Name, Contact or Token"
@@ -27,9 +27,9 @@ export default function Header() {
             </div>
           </div>
 
-          <Select>
+          <Select defaultValue={"solana"}>
             <SelectTrigger className="w-[180px] rounded-full shadow-none border-black">
-              <SelectValue defaultValue={"solana"} placeholder="Solana"></SelectValue>
+              <SelectValue />
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="solana">

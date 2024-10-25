@@ -10,7 +10,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { LOGO } from "@/assets";
+import { AVATAR1, LOGO, TELEGRAM, TWITTER } from "@/assets";
 
 export default function Section2() {
   const [trendingState, setTrendingState] = useState(true);
@@ -96,6 +96,9 @@ export default function Section2() {
             </CarouselItem>
             <CarouselItem className="pl-6 sm:basis-1/2 md:basis-1/3 lg:basis-1/3">
               <div className="relative w-full h-full bg-white rounded-xl p-6 flex flex-col gap-2">
+                <p className="absolute right-6 top-8 text-[11px] font-semibold text-[#232323] flex items-center">More
+                  <MaterialSymbol icon="keyboard_arrow_right" />
+                </p>
                 <div className="w-full flex items-center gap-2">
                   <img src={LOGO} className="w-9 h-9" />
                   <div className="flex flex-col">
@@ -117,7 +120,6 @@ export default function Section2() {
                     <Table2Row />
                     <Table2Row />
                     <Table2Row />
-
                   </tbody>
                 </table>
               </div>
@@ -125,9 +127,91 @@ export default function Section2() {
 
             <CarouselItem className="pl-6 sm:basis-1/2 md:basis-1/3 lg:basis-1/3">
               <div className="relative w-full h-full bg-white rounded-xl p-6 flex flex-col gap-6">
+                <p className="absolute right-6 top-8 text-[11px] font-semibold text-[#232323] flex items-center">More
+                  <MaterialSymbol icon="keyboard_arrow_right" />
+                </p>
                 <div className="flex items-center gap-2">
                   <MaterialSymbol icon="rotate_right" weight={700} size={24} />
                   <p className="text-[15px] text-[#232323] font-semibold">Recently updated socials</p>
+                </div>
+
+                <div className="w-full flex flex-col gap-2">
+                  <div className="w-full flex justify-between">
+                    <div className="flex gap-2 items-center">
+                      <div className="w-5 h-5 rounded-full overflow-hidden">
+                        <img src={AVATAR1} className="w-full h-full" />
+                      </div>
+                      <p className="text-[11px] font-medium text-[#232323]">OIIA</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <p className="text-[11px] font-medium text-[#232323]">1 hour ago,</p>
+                      <MaterialSymbol icon="mail" size={16} />
+                      <img src={TELEGRAM} className="w-3 h-3" />
+                      <img src={TWITTER} className="w-3 h-3" />
+                      <MaterialSymbol icon="monitoring" size={16} />
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-between">
+                    <div className="flex gap-2 items-center">
+                      <div className="w-5 h-5 rounded-full overflow-hidden">
+                        <img src={AVATAR1} className="w-full h-full" />
+                      </div>
+                      <p className="text-[11px] font-medium text-[#232323]">OIIA</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <p className="text-[11px] font-medium text-[#232323]">1 hour ago,</p>
+                      <MaterialSymbol icon="mail" size={16} />
+                      <MaterialSymbol icon="jamboard_kiosk" size={16} />
+                      <img src={TELEGRAM} className="w-3 h-3" />
+                      <MaterialSymbol icon="monitoring" size={16} />
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-between">
+                    <div className="flex gap-2 items-center">
+                      <div className="w-5 h-5 rounded-full overflow-hidden">
+                        <img src={AVATAR1} className="w-full h-full" />
+                      </div>
+                      <p className="text-[11px] font-medium text-[#232323]">OIIA</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <p className="text-[11px] font-medium text-[#232323]">4 hour ago,</p>
+                      <MaterialSymbol icon="mail" size={16} />
+                      <img src={TELEGRAM} className="w-3 h-3" />
+                      <img src={TWITTER} className="w-3 h-3" />
+                      <MaterialSymbol icon="monitoring" size={16} />
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-between">
+                    <div className="flex gap-2 items-center">
+                      <div className="w-5 h-5 rounded-full overflow-hidden">
+                        <img src={AVATAR1} className="w-full h-full" />
+                      </div>
+                      <p className="text-[11px] font-medium text-[#232323]">OIIA</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <p className="text-[11px] font-medium text-[#232323]">3 hour ago,</p>
+                      <MaterialSymbol icon="mail" size={16} />
+                      <MaterialSymbol icon="jamboard_kiosk" size={16} />
+                      <img src={TELEGRAM} className="w-3 h-3" />
+                      <MaterialSymbol icon="monitoring" size={16} />
+                    </div>
+                  </div>
+                  <div className="w-full flex justify-between">
+                    <div className="flex gap-2 items-center">
+                      <div className="w-5 h-5 rounded-full overflow-hidden">
+                        <img src={AVATAR1} className="w-full h-full" />
+                      </div>
+                      <p className="text-[11px] font-medium text-[#232323]">OIIA</p>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <p className="text-[11px] font-medium text-[#232323]">4 hour ago,</p>
+                      <MaterialSymbol icon="mail" size={16} />
+                      <img src={TELEGRAM} className="w-3 h-3" />
+                      <img src={TWITTER} className="w-3 h-3" />
+                      <MaterialSymbol icon="monitoring" size={16} />
+                    </div>
+                  </div>
+                
                 </div>
               </div>
             </CarouselItem>
