@@ -144,7 +144,7 @@ export default function TokensTable() {
 const TableRow = ({ index }) => {
   return (
     <tr className="table-fixed text-[11px] bg-white border">
-      <td className="min-w-[230px] py-1 px-2 border">
+      <td className="min-w-[250px] py-1 px-2 border">
         <div className="flex items-center gap-1 ">
           <p className="text-[12px] text-black font-semibold">#{index + 1}</p>
           <img src={TRAIMP} className="w-4 h-4" />
