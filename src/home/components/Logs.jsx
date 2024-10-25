@@ -111,18 +111,18 @@ export default function Logs() {
       <div className="w-full overflow-x-scroll custom-scrollbar">
         <table className="w-full rounded-xl overflow-hidden overflow-x-scroll">
           <thead className="bg-[#020417] rounded-xl">
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">TOKEN</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">PRICE</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">AGE</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">TXNS</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">VOLUME</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">MAKERS</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">5M</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">1H</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">6H</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">24 H</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">LIQUIDITY</th>
-            <th className="text-white text-[8px] font-semibold text-left px-2 py-1">MCAP</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">TOKEN</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">PRICE</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">AGE</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">TXNS</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">VOLUME</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">MAKERS</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">5M</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">1H</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">6H</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">24 H</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">LIQUIDITY</th>
+            <th className="text-white text-[12px] font-semibold text-left px-2 py-1">MCAP</th>
           </thead>
           <tbody className=" overflow-hidden overflow-x-scroll">
             {[...new Array(40)].map((_, index) => {
@@ -144,50 +144,50 @@ export default function Logs() {
 const TableRow = ({ index }) => {
   return (
     <tr className="table-fixed text-[11px] bg-white border">
-      <td className="min-w-[200px] py-1 px-2 border">
+      <td className="min-w-[250px] py-1 px-2 border">
         <div className="flex items-center gap-1 ">
-          <p className="text-[7px] text-black font-semibold">#{index + 1}</p>
+          <p className="text-[12px] text-black font-semibold">#{index + 1}</p>
           <img src={TRAIMP} className="w-4 h-4" />
-          <p className="text-[7px] bg-gradient-to-r from-[#0533FF] to-[#D002EB] bg-clip-text text-transparent font-semibold">TRIAMP</p>
-          <p className="text-[7px] text-[#888888] font-medium">/SOL</p>
+          <p className="text-[10px] bg-gradient-to-r from-[#0533FF] to-[#D002EB] bg-clip-text text-transparent font-semibold">TRIAMP</p>
+          <p className="text-[10px] text-[#888888] font-medium">/SOL</p>
           <img src={TRAIMP2} className="w-4 h-4" />
-          <p className="text-[7px] text-black font-semibold">TRUMP AI</p>
+          <p className="text-[12px] text-black font-semibold">TRUMP AI</p>
           <MaterialSymbol icon="bolt" fill color={"#F6A823"} />
-          <p className="text-[7px] text-[#F6A823] font-semibold">2000</p>
+          <p className="text-[10px] text-[#F6A823] font-semibold">2000</p>
         </div>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-black font-semibold">$0.0008648</p>
+        <p className="text-[12px] text-black font-semibold">$0.0008648</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-black font-semibold">15h</p>
+        <p className="text-[12px] text-black font-semibold">15h</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-black font-semibold">159,856</p>
+        <p className="text-[12px] text-black font-semibold">159,856</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-black font-semibold">$5.0M</p>
+        <p className="text-[12px] text-black font-semibold">$5.0M</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-black font-semibold">186,998</p>
+        <p className="text-[12px] text-black font-semibold">186,998</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-[#C61717] font-semibold">-0.14%</p>
+        <p className="text-[10px] text-[#C61717] font-semibold">-0.14%</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-[#03DB03] font-semibold">11.86%</p>
+        <p className="text-[10px] text-[#03DB03] font-semibold">11.86%</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-[#03DB03] font-semibold">20.55%</p>
+        <p className="text-[10px] text-[#03DB03] font-semibold">20.55%</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-[#03DB03] font-semibold">15,582%</p>
+        <p className="text-[10px] text-[#03DB03] font-semibold">15,582%</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-black font-semibold">$186k</p>
+        <p className="text-[12px] text-black font-semibold">$186k</p>
       </td>
       <td className="py-1 px-2 border">
-        <p className="text-[7px] text-black font-semibold">$984k</p>
+        <p className="text-[12px] text-black font-semibold">$984k</p>
       </td>
     </tr>
   )
