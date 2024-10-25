@@ -8,10 +8,10 @@ export default function Header() {
   return (
     <div className="w-full flex items-center justify-between p-4">
       <div className="w-full flex items-center justify-between">
-        <div className="w-full max-w-md flex items-center gap-2 px-2 py-1 border border-black rounded-md">
-          <Search />
+        <div className="w-full h-10 max-w-md flex items-center gap-2 px-2 py-1 border border-black rounded-xl">
+          <Search size={20}/>
           <Input
-            className="border-none shadow-none outline-none"
+            className="text-xs font-medium border-none shadow-none outline-none focus:outline-none focus:ring-0 focus-visible:ring-0"
             placeholder="Search pair by symbol, Name, Contact or Token"
           />
         </div>

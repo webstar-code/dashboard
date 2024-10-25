@@ -95,7 +95,7 @@ export default function Section2() {
               </div>
             </CarouselItem>
             <CarouselItem className="pl-6 sm:basis-1/2 md:basis-1/3 lg:basis-1/3">
-              <div className="relative w-full h-full bg-white rounded-xl p-6 flex flex-col gap-6">
+              <div className="relative w-full h-full bg-white rounded-xl p-6 flex flex-col gap-2">
                 <div className="w-full flex items-center gap-2">
                   <img src={LOGO} className="w-9 h-9" />
                   <div className="flex flex-col">
@@ -141,8 +141,8 @@ export default function Section2() {
 const TableRow = () => {
   return (
     <tr className="text-[11px]">
-      <td>#1</td>
-      <td className="flex items-center gap-1">
+      <td className="p-1 ">#1</td>
+      <td className="p-1 flex items-center gap-1">
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <rect width="12" height="12" rx="6" fill="url(#pattern0_39_2370)" />
           <defs>
@@ -154,8 +154,8 @@ const TableRow = () => {
         </svg>
         <p className="text-[11px] font-semibold text-[#232323]">Blockai <span className="text-[#B3B3B3]">/ WETH</span></p>
       </td>
-      <td><p className="text-[11px] font-semibold text-[#03DB03]">$0.00509</p></td>
-      <td className="flex items-center gap-1">
+      <td className="p-1 "><p className="text-[11px] font-semibold text-[#03DB03]">$0.00509</p></td>
+      <td className="p-1 flex items-center gap-1">
         <p className="text-[11px] font-semibold text-[#03DB03] flex items-center gap-1">
           <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.35 2.62036L1 4.00003L0.528667 3.5287L1.879 2.14902L0.229004 0.499023H4V4.27036L2.35 2.62036Z" fill="#03DB03" />
@@ -168,8 +168,8 @@ const TableRow = () => {
 const Table2Row = () => {
   return (
     <tr className="text-[11px]">
-      <td>#1</td>
-      <td className="w-full flex items-center gap-1">
+      <td className="p-1 ">#1</td>
+      <td className="p-1 w-full flex items-center gap-1">
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <rect width="12" height="12" rx="6" fill="url(#pattern0_39_2200)" />
           <defs>
@@ -181,8 +181,8 @@ const Table2Row = () => {
         </svg>
         <p className="text-[11px] font-semibold text-[#232323]">DUCK DUCK</p>
       </td>
-      <td><p className="text-[11px] text-[#232323] justify-self-end">1 day ago,</p></td>
-      <td className="flex items-center gap-1 justify-self-end">
+      <td className="p-1 "><p className="text-[11px] text-[#232323] justify-self-end">1 day ago,</p></td>
+      <td className="p-1 flex items-center gap-1 justify-self-end">
         <img src={LOGO} className="w-4 h-4" />
         <p className="text-[11px] text-[#232323] font-semibold">ETH</p>
       </td>
