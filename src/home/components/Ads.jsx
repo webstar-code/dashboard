@@ -17,13 +17,13 @@ export default function Ads() {
     <div className="w-full">
       <Carousel className="w-full">
         <CarouselContent className="-ml-4">
-          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"><SliderCard /></CarouselItem>
-          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"><SliderCard /></CarouselItem>
-          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"><SliderCard /></CarouselItem>
-          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"><SliderCard /></CarouselItem>
-          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"><SliderCard /></CarouselItem>
-          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"><SliderCard /></CarouselItem>
-          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4"><SliderCard /></CarouselItem>
+          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"><SliderCard /></CarouselItem>
+          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"><SliderCard /></CarouselItem>
+          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"><SliderCard /></CarouselItem>
+          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"><SliderCard /></CarouselItem>
+          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"><SliderCard /></CarouselItem>
+          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"><SliderCard /></CarouselItem>
+          <CarouselItem className="pl-4 sm:basis-1/2 md:basis-1/2 lg:basis-1/3 xl:basis-1/4 2xl:basis-1/5"><SliderCard /></CarouselItem>
         </CarouselContent>
       </Carousel>
 

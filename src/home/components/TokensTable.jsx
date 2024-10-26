@@ -28,7 +28,7 @@ export default function TokensTable() {
         </div>
       </div>
 
-      <div className="w-full flex flex-wrap md:flex-nowrap gap-2 md:gap-6">
+      <div className="w-full flex flex-wrap xl:flex-nowrap gap-2 md:gap-6">
         <Select defaultValue="last24">
           <SelectTrigger className="w-min rounded-xl shadow-none border bg-[#000000] text-white text-[10px]">
             <SelectValue />

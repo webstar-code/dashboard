@@ -15,7 +15,7 @@ import {
 
 export default function SideBar() {
   return (
-    <div className="group fixed hidden left-0 top-0 w-20 hover:w-64 hover:items-start h-full min-h-screen bg-white md:flex flex-col p-4 pl-5 pr-2 z-50">
+    <div className="group left-0 top-0 w-20 hover:w-64 hover:items-start h-full min-h-screen bg-white md:flex flex-col p-4 pl-5 pr-2 z-50">
       <img src={LOGO} className="w-8 h-8" />
 
       <div className="w-full flex flex-col group-hover:items-start items-center pr-4 mt-6 gap-10 overflow-x-hidden overflow-y-scroll custom-scrollbar">
