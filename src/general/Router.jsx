@@ -11,10 +11,7 @@ export const Router = () => (
       path={RoutePaths.HOME}
       element={
         <Layout>
-          {/* <Home /> */}
-          <div className="w-full min-h-screen bg-white">
-
-          </div>
+          <Home />
         </Layout>
       }
     />
