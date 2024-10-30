@@ -13,7 +13,6 @@ export const Home = () => (
     </div>
     <div className="w-full flex flex-col gap-10 bg-[#F7F7F7] p-6 md:pl-28">
       <div className="w-full min-h-[500px] bg-white">
-
       </div>
       <News />
       <Footer />
